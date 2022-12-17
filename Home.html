@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiff</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="nav">
+            <a href="#" class="logo"><img src="img/removebg-preview.png" id="logo"></a>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Blog.html">Blogs</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle-btn" id="btn">
+                <span id="btnText">Dark</span>
+                <img src="img/moon.png" id="btnIcon">
+            </div>
+        </nav>
+
+        <div class="contect">
+            <h1>Hello!</h1>
+            <h1><span>Am</span> Tiffany.K</h1>
+            <p>Wellcome to my website feel free to check some of our books, be sure to leave a comment 
+                for us and let us know your experience.</p>
+            </p>
+            <a href="#">Blogs</a>
+        </div>
+
+        <div class="img-box">
+            <img src="img/IMG_7841-removebg-preview.png">
+            <div class="pattern">
+                <img src="img/background-orange.png">
+                <img src="img/background-orange.png">
+            </div>
+        </div>
+
+    </div>
+
+<script>
+
+let btn = document.getElementById("btn");
+let btnText = document.getElementById("btnText");
+let btnIcon = document.getElementById("btnIcon")
+
+
+btn.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+        btnIcon.src = "img/sun.png";
+        btnText.innerHTML = "Light";
+    }else{
+        btnIcon.src = "img/moon.png";
+        btnText.innerHTML = "Dark";
+    }
+}
+
+</script>
+</body>
+</html>
